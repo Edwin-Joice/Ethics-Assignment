@@ -1356,7 +1356,7 @@ def leaderboard():
     st.write("")
 
     # Read the leaderboard data from the Excel file
-    leaderboard_df = pd.read_excel(r"C:\Users\edwin\Downloads\leaderboard.xlsx", engine='openpyxl')
+    leaderboard_df = pd.read_excel("leaderboard.xlsx", engine='openpyxl')
 
     # Sort the leaderboard in descending order of scores
     leaderboard_df = leaderboard_df.sort_values(by='Score', ascending=False)
@@ -1429,7 +1429,7 @@ def main():
 
                 if st.button("Submit Score") and not st.session_state.get('score_submitted', False):
 
-                    leaderboard_df = pd.read_excel(r"C:\Users\edwin\Downloads\leaderboard.xlsx", engine='openpyxl')
+                    leaderboard_df = pd.read_excel("leaderboard.xlsx", engine='openpyxl')
                     new_entry = pd.DataFrame({'Username': [st.session_state.username], 'Score': [st.session_state.score]})
                     leaderboard_df = pd.concat([leaderboard_df, new_entry], ignore_index=True)
                     leaderboard_df.to_excel("leaderboard.xlsx", index=False, engine='openpyxl')
