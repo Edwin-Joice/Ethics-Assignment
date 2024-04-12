@@ -337,7 +337,7 @@ def data_privacy():
     col1,col2,col3 = st.columns([2,10,2])
 
     with col2:
-        st.image(photo2.png, use_column_width=True)
+        st.image("photo2.png", use_column_width=True)
 
     importance = """
         <p style='text-align: justify; font-size: 17px;'>
@@ -564,7 +564,7 @@ def case_study_1():
 
     with col2:
 
-        st.image(target.jpg)
+        st.image("target".jpg)
 
     #Background section
     st.markdown("<h3 style='text-align: Center;'><span style='color: orange;'>Background</span></h3>", unsafe_allow_html=True)
@@ -722,7 +722,7 @@ def case_study_2():
 
     with col2:
 
-        st.image(r"C:\Users\edwin\Downloads\Ethics\images\yahoo.jpg")
+        st.image("yahoo.jpg")
 
 
     # Background section
@@ -886,7 +886,7 @@ def case_study_3():
 
     with col2:
 
-        st.image(r"C:\Users\edwin\Downloads\Ethics\images\marriott.jpg")
+        st.image("marriott.jpg")
 
 
     # Background section
@@ -1044,7 +1044,7 @@ def case_study_4():
 
     with col2:
 
-        st.image(r"C:\Users\edwin\Downloads\Ethics\images\AnthemDataBreach.png")
+        st.image("AnthemDataBreach.png")
 
 
     # Background section
@@ -1197,7 +1197,7 @@ def case_study_5():
 
     with col2:
 
-        st.image(r"C:\Users\edwin\Downloads\Ethics\images\capitalone.jpg")
+        st.image("capitalone.jpg")
 
 
     # Background section
