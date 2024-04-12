@@ -204,7 +204,7 @@ def key_aspects():
 
     st.markdown("<h2 style='text-align: center;'><span style='color: orange;'>Ethical</span> Considerations in Data Collection</h2>", unsafe_allow_html=True)
 
-    st.image(r"C:\Users\edwin\Downloads\Ethics\images\photo1.png", use_column_width=True)
+    st.image(photo1.png, use_column_width=True)
 
     Ethical_considerations = """
         <p style='text-align: justify; font-size: 17px;'>
@@ -337,7 +337,7 @@ def data_privacy():
     col1,col2,col3 = st.columns([2,10,2])
 
     with col2:
-        st.image(r"C:\Users\edwin\Downloads\Ethics\images\photo2.png", use_column_width=True)
+        st.image(photo2.png, use_column_width=True)
 
     importance = """
         <p style='text-align: justify; font-size: 17px;'>
@@ -564,7 +564,7 @@ def case_study_1():
 
     with col2:
 
-        st.image(r"C:\Users\edwin\Downloads\Ethics\images\target.jpg")
+        st.image(target.jpg)
 
     #Background section
     st.markdown("<h3 style='text-align: Center;'><span style='color: orange;'>Background</span></h3>", unsafe_allow_html=True)
