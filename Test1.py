@@ -204,7 +204,7 @@ def key_aspects():
 
     st.markdown("<h2 style='text-align: center;'><span style='color: orange;'>Ethical</span> Considerations in Data Collection</h2>", unsafe_allow_html=True)
 
-    st.image(photo1.png, use_column_width=True)
+    st.image("photo1.png", use_column_width=True)
 
     Ethical_considerations = """
         <p style='text-align: justify; font-size: 17px;'>
