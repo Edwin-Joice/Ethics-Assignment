@@ -1407,7 +1407,7 @@ def main():
         selected = option_menu(
             menu_title=menu_title,
             options=["Home", "What is Ethics?", "Key Aspects", "Data Privacy", "Case Studies","Leaderboard"],
-            icons=["house", "book", "list-task", "lock", "highlighter","trophy"],
+            icons=["house", "book", "list-task", "lock", "marker-tip","trophy"],
             default_index=0,
         )
 
