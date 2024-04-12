@@ -564,7 +564,7 @@ def case_study_1():
 
     with col2:
 
-        st.image("target".jpg)
+        st.image("target.jpg")
 
     #Background section
     st.markdown("<h3 style='text-align: Center;'><span style='color: orange;'>Background</span></h3>", unsafe_allow_html=True)
@@ -1432,7 +1432,7 @@ def main():
                     leaderboard_df = pd.read_excel(r"C:\Users\edwin\Downloads\leaderboard.xlsx", engine='openpyxl')
                     new_entry = pd.DataFrame({'Username': [st.session_state.username], 'Score': [st.session_state.score]})
                     leaderboard_df = pd.concat([leaderboard_df, new_entry], ignore_index=True)
-                    leaderboard_df.to_excel(r"C:\Users\edwin\Downloads\leaderboard.xlsx", index=False, engine='openpyxl')
+                    leaderboard_df.to_excel("leaderboard.xlsx", index=False, engine='openpyxl')
                     st.session_state.score_submitted = True  # Set score_submitted to True
                     st.success(f"Score submitted successfully! Your score: {st.session_state.score}")
                 elif st.session_state.get('score_submitted', False):
