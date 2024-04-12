@@ -1,0 +1,7 @@
+streamlit==1.19.0
+pandas==1.5.3
+streamlit-option-menu==0.3.2
+folium==0.14.0
+pydeck==0.8.0
+plotly==5.13.1
+openpyxl==3.1.1
