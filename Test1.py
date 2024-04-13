@@ -16,7 +16,7 @@ dark_theme_css = """
   :root {
     --background-color: #121212;
     --text-color: #e5e5e5;
-    --accent-color: #1e88e5;
+    --accent-color: #e5e5e5;
   }
 
   body {
