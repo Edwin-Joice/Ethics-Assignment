@@ -7,7 +7,23 @@ import plotly.express as px
 import openpyxl
 
 
-st.set_page_config( layout="wide", theme="dark")
+st.set_page_config( layout="wide")
+
+dark_theme = """
+<style>
+:root {
+    --background-color: #121212;
+    --text-color: #e5e5e5;
+}
+body {
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+</style>
+"""
+
+# Apply the custom CSS
+st.markdown(dark_theme, unsafe_allow_html=True)
 
 
 
