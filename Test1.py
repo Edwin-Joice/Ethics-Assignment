@@ -9,21 +9,87 @@ import openpyxl
 
 st.set_page_config( layout="wide")
 
-dark_theme = """
+# Apply the dark theme CSS
+dark_theme_css = """
 <style>
-:root {
+  /* General styles */
+  :root {
     --background-color: #121212;
     --text-color: #e5e5e5;
-}
-body {
-    color: var(--text-color);
+    --accent-color: #1e88e5;
+  }
+
+  body {
     background-color: var(--background-color);
-}
+    color: var(--text-color);
+  }
+
+  /* App container */
+  [data-testid="stAppViewContainer"] > .main {
+    background-color: var(--background-color);
+  }
+
+  /* Header */
+  [data-testid="stHeader"] {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  /* Toolbar */
+  [data-testid="stToolbar"] {
+    right: 2rem;
+  }
+
+  /* Sidebar */
+  [data-testid="stSidebar"] {
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+
+  /* Sidebar navigation links */
+  [data-testid="stSidebarNavLink"] {
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+
+  /* Vertical block border wrapper */
+  [data-testid="stVerticalBlockBorderWrapper"][class="st-emotion-cache-r421ms e1f1d6gn0"] {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  /* Streamlit components */
+  .stMarkdown {
+    color: var(--text-color);
+  }
+
+  .stButton button {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+  }
+
+  .stTextInput > div > div > input {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border-color: var(--accent-color);
+  }
+
+  .stSelectbox > div > div > div {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border-color: var(--accent-color);
+  }
+
+  .stCheckbox > div > div > div {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border-color: var(--accent-color);
+  }
+
+  .stRadio > div > div > div {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border-color: var(--accent-color);
+  }
 </style>
 """
-
-# Apply the custom CSS
-st.markdown(dark_theme, unsafe_allow_html=True)
+st.markdown(dark_theme_css, unsafe_allow_html=True)
 
 
 
