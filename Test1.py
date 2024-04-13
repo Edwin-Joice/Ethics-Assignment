@@ -6,7 +6,8 @@ import pydeck as pdk
 import plotly.express as px
 import openpyxl
 
-st.set_page_config(layout="wide")
+
+st.set_page_config(layout="dark")
 
 
 
