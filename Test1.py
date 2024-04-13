@@ -15,8 +15,9 @@ dark_theme_css = """
   /* General styles */
   :root {
     --background-color: #121212;
+    --sidebar-color: #333333;
     --text-color: #e5e5e5;
-    --accent-color: #e5e5e5;
+    --accent-color: #1e88e5;
   }
 
   body {
@@ -27,31 +28,37 @@ dark_theme_css = """
   /* App container */
   [data-testid="stAppViewContainer"] > .main {
     background-color: var(--background-color);
+    color: var(--text-color);
   }
 
   /* Header */
   [data-testid="stHeader"] {
     background-color: rgba(0, 0, 0, 0.8);
+    color: var(--text-color);
   }
 
   /* Toolbar */
   [data-testid="stToolbar"] {
     right: 2rem;
+    color: var(--text-color);
   }
 
   /* Sidebar */
   [data-testid="stSidebar"] {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: var(--sidebar-color);
+    color: var(--text-color);
   }
 
   /* Sidebar navigation links */
   [data-testid="stSidebarNavLink"] {
     background-color: rgba(0, 0, 0, 0.75);
+    color: var(--text-color);
   }
 
   /* Vertical block border wrapper */
   [data-testid="stVerticalBlockBorderWrapper"][class="st-emotion-cache-r421ms e1f1d6gn0"] {
     background-color: rgba(0, 0, 0, 0.5);
+    color: var(--text-color);
   }
 
   /* Streamlit components */
