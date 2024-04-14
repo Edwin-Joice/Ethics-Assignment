@@ -1438,6 +1438,17 @@ def main():
                     st.warning("Score already submitted!")
         else:
             st.session_state.score = 0
+           
+        st.write("")
+        st.write("")
+        st.write("")
+        st.write("")
+      
+
+        col1,col2,col3 = st.columns([1,3,1])
+        with col2:
+            text = """ <p style='text-align: center; font-size: 12px;'>Developed by<br><br> Deepanshi Gupta<br> and <br>Edwin Joice Gupta</p> """
+            st.markdown(text,unsafe_allow_html=True)
 
             
 
