@@ -1443,8 +1443,6 @@ def main():
         st.write("")
         st.write("")
         st.write("")
-      
-
         col1,col2,col3 = st.columns([1,3,1])
         with col2:
             text = """ <p style='text-align: center; font-size: 12px;'>Developed by<br><br> Deepanshi Gupta<br> and <br>Edwin Joice Gupta</p> """
